@@ -48,9 +48,9 @@ int main() {
       continue;
     }
 
-    struct drm_mode_create_dumb create_dumb={0};
-    struct drm_mode_map_dumb map_dumb={0};
-    struct drm_mode_fb_cmd cmd_dumb={0};
+    struct drm_mode_create_dumb create_dumb = {0};
+    struct drm_mode_map_dumb map_dumb = {0};
+    struct drm_mode_fb_cmd cmd_dumb = {0};
 
     create_dumb.width = conn_mode_buf[0].hdisplay;
     create_dumb.height = conn_mode_buf[0].vdisplay;
